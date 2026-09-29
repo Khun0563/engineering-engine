@@ -1,26 +1,46 @@
+<div align="center">
+
 # Engineering Engine
 
-A repository engineering, analysis, repair, extension, validation, and automation engine.
+**Repository Engineering • Analysis • Repair • Validation • Automation**
 
-## Purpose
+[![Status](https://img.shields.io/badge/status-foundation-blue)](https://github.com/Khun0563/engineering-engine)
+[![Initial Target](https://img.shields.io/badge/initial%20target-React%20Native%20%2F%20Android-orange)](https://github.com/Khun0563/engineering-engine)
+[![Workflow](https://img.shields.io/badge/workflow-evidence--driven-green)](https://github.com/Khun0563/engineering-engine)
 
-Engineering Engine is designed to analyze software repositories, detect problems, identify root causes, propose or apply safe fixes, add required functionality, generate engineering scripts, run validation, and produce evidence-based reports.
+</div>
 
-## Initial Target
+---
 
-Version 0.1 starts with the M6 React Native / Android build-validation problem from the Universal ZIP-to-APK Builder project.
+## What is Engineering Engine?
 
-The React Native implementation is the first adapter, not the permanent scope of the engine.
+Engineering Engine is a **repository engineering system** designed to help analyze software projects, detect failures, diagnose root causes, plan changes, apply safe repairs, verify results, run regression tests, and produce evidence-based engineering reports.
+
+It is designed to be **framework-agnostic at the core**.
+
+Framework-specific behavior belongs in adapters and rules.
+
+> **A command passing is not the same as an engineering repair passing.**
+
+A repair is considered successful only when the required validation evidence proves that the project still satisfies its original requirements.
+
+---
 
 ## Core Workflow
 
-Analyze → Detect → Diagnose → Plan → Repair → Verify → Regression Test → Report
-
-## Safety Principles
-
-- Preserve project intent and architecture.
-- Prefer minimal, evidence-based changes.
-- Never bypass required build/runtime gates just to obtain a PASS.
-- Never silently change major dependencies or architecture.
-- Protect existing local/project work.
-- Every repair must be verifiable.
+```text
+Analyze
+   ↓
+Detect
+   ↓
+Diagnose
+   ↓
+Plan
+   ↓
+Repair
+   ↓
+Verify
+   ↓
+Regression Test
+   ↓
+Report
